@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.ul.Utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.ul.testcase.TC_store_006">
+        <methods>
+          <include name="setup"/>
+          <include name="SetDown"/>
+          <include name="storetitle"/>
+        </methods>
+      </class> <!-- com.ul.testcase.TC_store_006 -->
+      <class name="com.ul.testcase.TC_email_002">
+        <methods>
+          <include name="setup"/>
+          <include name="SetDown"/>
+          <include name="EnterEmail" invocation-numbers="0 1 2 3 4 5 6"/>
+        </methods>
+      </class> <!-- com.ul.testcase.TC_email_002 -->
+      <class name="com.ul.testcase.TC_contact_008">
+        <methods>
+          <include name="setup"/>
+          <include name="SetDown"/>
+          <include name="contacttitle"/>
+        </methods>
+      </class> <!-- com.ul.testcase.TC_contact_008 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
